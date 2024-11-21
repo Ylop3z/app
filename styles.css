@@ -1,0 +1,80 @@
+/* CSS File: styles.css */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --success-color: #2ecc71;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.dashboard-container {
+  padding: 2rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: 450px; /* Ajusta la altura para todas las tarjetas */
+  min-height: 250px;
+  margin: 0 auto; /* Centra la tarjeta */
+  padding: 1rem; /* Añade espacio interno a la tarjeta */
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido equitativamente */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.conversion-badge {
+  background-color: var(--success-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block; /* Asegura que el badge se muestre debajo del nombre */
+  margin: 0.5rem auto; /* Centra el badge y añade espacio */
+  text-align: center; /* Centra el texto del badge */
+}
+
+.agent-stats {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.performance-icon {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.header {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center; /* Centra el texto del título */
+  margin-bottom: 0.5rem; /* Añade espacio debajo del título */
+}
+
+.agent-image {
+  width: 150px; /* Tamaño ajustable */
+  height: 150px; /* Tamaño ajustable */
+  object-fit: cover;
+  border-radius: 50%; /* Hace la imagen circular */
+  margin: 0 auto 1rem; /* Centra la imagen horizontalmente y añade espacio debajo */
+  display: block; /* Asegura que la imagen se centre correctamente */
+}
